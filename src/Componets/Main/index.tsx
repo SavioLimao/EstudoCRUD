@@ -39,7 +39,7 @@ export const Main = () => {
               <aside>
                 <div className="Plus">
                   <BTN>
-                    +
+                    ++
                   </BTN>
                 </div>
                 <div className="Edit">
