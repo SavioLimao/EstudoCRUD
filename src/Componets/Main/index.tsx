@@ -1,5 +1,7 @@
-import { BTN } from "../Button";
-import { EditIcon } from "../Edit Icon";
+// import { BTN } from "../Button";
+// import { EditIcon } from "../Edit Icon";
+
+import { Buttons } from "../Bottons";
 
 export const Main = () => {
   const Produtos = [
@@ -36,23 +38,7 @@ export const Main = () => {
               <td>{Produto.Descricao}</td>
               <td>R$ {Produto.Preco}</td>
               <td>{Produto.Estoque}</td>
-              <aside>
-                <div className="Plus">
-                  <BTN>
-                    ++
-                  </BTN>
-                </div>
-                <div className="Edit">
-                  <BTN>
-                    <EditIcon />
-                  </BTN>
-                </div>
-                <div className="Delete">
-                  <BTN>
-                    -
-                  </BTN>
-                </div>
-              </aside>
+              <Buttons />
             </tr>
           ))}
         </tbody>
