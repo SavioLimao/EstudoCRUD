@@ -1,7 +1,14 @@
+import { FC, ReactNode } from 'react'
+type BTNProps = {
+    children: ReactNode;
+    onClick: (event: React.MouseEvent<HTMLButtonElement>) => void
+}
 
-export const BTN = ({children}) => {
+
+
+export const BTN: FC<BTNProps> = ({ children, onClick }) => {
     return (
-        <button>
+        <button onClick={onClick}>
             {children}
         </button>
     )

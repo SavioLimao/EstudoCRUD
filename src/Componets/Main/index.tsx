@@ -2,7 +2,7 @@
 // import { EditIcon } from "../Edit Icon";
 
 import { Buttons } from "../Bottons";
-import { ProdutoElem } from "../ProdutoElem";
+
 
 export const Main = () => {
   const Produtos = [
@@ -35,11 +35,10 @@ export const Main = () => {
         <tbody>
           {Produtos.map((Produto) => (
             <tr>
-              <ProdutoElem Produto.Nome/>
-              {/* <td>{Produto.Nome}</td>
+              <td>{Produto.Nome}</td>
               <td>{Produto.Descricao}</td>
               <td>R$ {Produto.Preco}</td>
-              <td>{Produto.Estoque}</td> */}
+              <td>{Produto.Estoque}</td>
               <Buttons />
             </tr>
           ))}
