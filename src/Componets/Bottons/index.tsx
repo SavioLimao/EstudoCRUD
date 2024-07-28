@@ -1,8 +1,9 @@
 import { BTN } from "../Button";
 import { EditIcon } from "../Edit Icon";
 
-export const Buttons = () => {
+export const Buttons = ({ AddProduct }) => {
   const Plus = () => {
+    AddProduct()
     console.log("plus");
   };
   const Edit = () => {

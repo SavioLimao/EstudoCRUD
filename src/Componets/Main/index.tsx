@@ -1,11 +1,8 @@
-// import { BTN } from "../Button";
-// import { EditIcon } from "../Edit Icon";
-
+import { useState } from "react";
 import { Buttons } from "../Bottons";
 
-
 export const Main = () => {
-  const Produtos = [
+  const [Produtos, setProdutos] = useState([
     {
       id: 1,
       Nome: "Para, c ta mal",
@@ -20,8 +17,18 @@ export const Main = () => {
       Preco: 15.88,
       Estoque: 12,
     },
-  ];
+  ]);
 
+  const AddProduct = () => {
+    const NewProduct = {
+      id: Produtos.length + 1,
+      Nome: "Novo",
+      Descricao: "Nova Descrição",
+      Preco: 0.00,
+      Estoque: 0,
+    }
+    setProdutos ([...Produtos, NewProduct])
+  }
   return (
     <div className="MainDiv">
       <table>
@@ -32,6 +39,11 @@ export const Main = () => {
           <th>Estoque</th>
           <th>Add | Edit | Del</th>
         </tr>
+        <tr>
+          <th>
+            <input type="text" placeholder="Novo Produto"/>
+          </th>
+        </tr>
         <tbody>
           {Produtos.map((Produto) => (
             <tr>
@@ -39,7 +51,7 @@ export const Main = () => {
               <td>{Produto.Descricao}</td>
               <td>R$ {Produto.Preco}</td>
               <td>{Produto.Estoque}</td>
-              <Buttons />
+              <Buttons AddProduct={AddProduct}/>
             </tr>
           ))}
         </tbody>
