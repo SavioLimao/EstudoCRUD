@@ -25,11 +25,11 @@ export const Main = () => {
       id: Produtos.length + 1,
       Nome: "Novo",
       Descricao: "Nova Descrição",
-      Preco: 0.00,
+      Preco: 0.0,
       Estoque: 0,
-    }
-    setProdutos ([...Produtos, NewProduct])
-  }
+    };
+    setProdutos([...Produtos, NewProduct]);
+  };
   return (
     <div className="MainDiv">
       <table>
@@ -42,7 +42,7 @@ export const Main = () => {
         </tr>
         <tr>
           <th>
-            <input type="text" placeholder="Novo Produto"/>
+            <input type="text" placeholder="Novo Produto" />
           </th>
         </tr>
         <tbody>
@@ -52,7 +52,7 @@ export const Main = () => {
               <td>{Produto.Descricao}</td>
               <td>R$ {Produto.Preco}</td>
               <td>{Produto.Estoque}</td>
-              <Buttons AddProduct={AddProduct}/>
+              <Buttons AddProduct={AddProduct} />
             </tr>
           ))}
         </tbody>
