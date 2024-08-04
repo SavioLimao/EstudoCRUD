@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Buttons } from "../Bottons";
 
 
@@ -30,6 +30,20 @@ export const Main = () => {
     };
     setProdutos([...Produtos, NewProduct]);
   };
+
+  const getPosts = async () => {
+    try {
+      
+      const response = await axios.get()
+      
+    } catch (error) {
+      alert('deu pau')
+    }
+  }
+
+  useEffect(() => {
+
+  }, [])
   return (
     <div className="MainDiv">
       <table>
