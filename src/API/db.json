@@ -1,0 +1,18 @@
+{
+    "Produtos": [
+      {
+        "id": 1,
+        "Nome": "Para, c ta mal",
+        "Descricao": "Analgésico e Antipirético",
+        "Preco": 12.99,
+        "Estoque": 25
+      },
+      {
+        "id": 2,
+        "Nome": "seakalm",
+        "Descricao": "tratamento da ansiedade leve",
+        "Preco": 15.88,
+        "Estoque": 12
+      }
+    ]
+  }

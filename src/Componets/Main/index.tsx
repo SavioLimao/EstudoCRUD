@@ -1,23 +1,11 @@
 import { useEffect, useState } from "react";
 import { Buttons } from "../Bottons";
+import { api } from "../../API/api";
 
 
-export const Main = () => {
+const Main = () => {
   const [Produtos, setProdutos] = useState([
-    {
-      id: 1,
-      Nome: "Para, c ta mal",
-      Descricao: "Analgésico e Antipirético",
-      Preco: 12.99,
-      Estoque: 25,
-    },
-    {
-      id: 2,
-      Nome: "seakalm",
-      Descricao: "tratamento da ansiedade leve",
-      Preco: 15.88,
-      Estoque: 12,
-    },
+    
   ]);
 
   const AddProduct = () => {
@@ -37,7 +25,7 @@ export const Main = () => {
       const response = await axios.get()
       
     } catch (error) {
-      alert('deu pau')
+      alert('deu')
     }
   }
 
