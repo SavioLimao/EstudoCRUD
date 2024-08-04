@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import { Buttons } from "../Bottons";
+import { Buttons } from "../Buttons";
 import { api } from "../../API/api";
-
+import { PlusButton } from "../PlusButton";
 type Produto = {
   id: number;
   name: string;
@@ -43,11 +43,12 @@ export const Main = () => {
           <th>Descrição</th>
           <th>Preço</th>
           <th>Estoque</th>
-          <th>Add | Edit | Del</th>
+          <th>Edit | Del</th>
         </tr>
         <tr>
           <th>
             <input type="text" placeholder="Novo Produto" />
+            <PlusButton />
           </th>
         </tr>
         <tbody>

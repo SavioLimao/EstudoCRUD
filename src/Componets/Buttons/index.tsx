@@ -2,11 +2,11 @@ import { BTN } from "../Button";
 import { EditIcon } from "../Edit Icon";
 
 
-export const Buttons = ({ AddProduct }) => {
-  const Plus = () => {
-    AddProduct()
-    console.log("plus");
-  };
+export const Buttons = () => {
+  // const Plus = () => {
+  //   AddProduct()
+  //   console.log("plus");
+  // };
   const Edit = () => {
     console.log("Edit");
   };
@@ -16,9 +16,9 @@ export const Buttons = ({ AddProduct }) => {
 
   return (
     <aside>
-      <div className="Plus">
+      {/* <div className="Plus">
         <BTN onClick={Plus}>+</BTN>
-      </div>
+      </div> */}
       <div className="Edit">
         <BTN onClick={Edit}>
           <EditIcon />
