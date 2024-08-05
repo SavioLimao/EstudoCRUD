@@ -2,12 +2,7 @@ import { useEffect, useState } from "react";
 import { Buttons } from "../Buttons";
 import { api } from "../../API/api";
 import { PlusButton } from "../PlusButton";
-type Produto = {
-  id: number;
-  name: string;
-  email: string;
-  phone: string;
-}
+
 export const Main = () => {
   const [Produtos, setProdutos] = useState([]);
   useEffect(() => {

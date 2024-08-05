@@ -3,13 +3,13 @@ import { useState } from "react";
 import { api } from "../../API/api";
 
 export const PlusButton = () => {
-    const plus = () => {
-
+    const AddRemedy = async () => {
+        
     console.log("plus")
 }
     return (
         <div className="Plus">
-            <BTN onClick={plus}>
+            <BTN onClick={AddRemedy}>
                 +
             </BTN>
         </div>
