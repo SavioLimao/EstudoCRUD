@@ -77,7 +77,7 @@ table {
   .Plus > button{
     background-color: #03950d;
     padding: 5px;
-    width: 30px;
+    /* width: 30px; */
     margin-top: 5px;
 
   }

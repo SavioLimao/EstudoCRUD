@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Buttons } from "../Buttons";
 import { api } from "../../API/api";
 import { PlusButton } from "../PlusButton";
+import { Modal } from "../Modal";
 
 export const Main = () => {
   const [Produtos, setProdutos] = useState([]);
@@ -33,6 +34,7 @@ export const Main = () => {
   return (
     <div className="MainDiv">
       <table>
+      <Modal>Adicioanr Novo Produto</Modal>
         <tr>
           <th>Produto</th>
           <th>Descrição</th>
@@ -40,12 +42,11 @@ export const Main = () => {
           <th>Estoque</th>
           <th>Edit | Del</th>
         </tr>
-        <tr>
+        {/* <tr>
           <th>
-            <input type="text" placeholder="Novo Produto" />
-            <PlusButton />
+            <Modal>Adicioanr Novo Produto</Modal>
           </th>
-        </tr>
+        </tr> */}
         <tbody>
           {Produtos.map((Produto, index) => (
             <tr key={index}>
