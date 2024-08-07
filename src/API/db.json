@@ -15,151 +15,25 @@
       "Estoque": 12
     },
     {
-      "id": "9759",
-      "name": "",
-      "desc": "",
-      "price": "",
-      "stock": ""
+      "id": "3",
+      "Nome": "Dutasterida",
+      "Descricao": "Cura a calvice",
+      "Preco": 72,
+      "Estoque": 17
     },
     {
-      "id": "4e8d",
-      "name": "",
-      "desc": "",
-      "price": "",
-      "stock": ""
+      "id": "f8c1",
+      "Nome": "Novo Remédio",
+      "Descricao": "tem gosto horrível",
+      "Preco": 130,
+      "Estoque": 2
     },
     {
-      "id": "8d0c",
-      "name": "",
-      "desc": "",
-      "price": "",
-      "stock": ""
-    },
-    {
-      "id": "de1c",
-      "name": "",
-      "desc": "",
-      "price": "",
-      "stock": ""
-    },
-    {
-      "id": "a1d7",
-      "name": "",
-      "desc": "",
-      "price": "",
-      "stock": ""
-    },
-    {
-      "id": "93f5",
-      "name": "",
-      "desc": "",
-      "price": "",
-      "stock": ""
-    },
-    {
-      "id": "5e3a",
-      "name": "",
-      "desc": "",
-      "price": "",
-      "stock": ""
-    },
-    {
-      "id": "fca7",
-      "name": "",
-      "desc": "",
-      "price": "",
-      "stock": ""
-    },
-    {
-      "id": "d3cd",
-      "name": "",
-      "desc": "",
-      "price": "",
-      "stock": ""
-    },
-    {
-      "id": "04bc",
-      "name": "",
-      "desc": "",
-      "price": "",
-      "stock": ""
-    },
-    {
-      "id": "f48c",
-      "name": "",
-      "desc": "",
-      "price": "",
-      "stock": ""
-    },
-    {
-      "id": "f7ce",
-      "name": "",
-      "desc": "",
-      "price": "",
-      "stock": ""
-    },
-    {
-      "id": "f47d",
-      "name": "",
-      "desc": "",
-      "price": "",
-      "stock": ""
-    },
-    {
-      "id": "f4c9",
-      "name": "",
-      "desc": "",
-      "price": "",
-      "stock": ""
-    },
-    {
-      "id": "5c77",
-      "name": "",
-      "desc": "",
-      "price": "",
-      "stock": ""
-    },
-    {
-      "id": "3a9e",
-      "name": "",
-      "desc": "",
-      "price": "",
-      "stock": ""
-    },
-    {
-      "id": "8ec6",
-      "name": "",
-      "desc": "",
-      "price": "",
-      "stock": ""
-    },
-    {
-      "id": "7706",
-      "name": "",
-      "desc": "",
-      "price": "",
-      "stock": ""
-    },
-    {
-      "id": "2f71",
-      "name": "",
-      "desc": "",
-      "price": "",
-      "stock": ""
-    },
-    {
-      "id": "e6a3",
-      "name": "",
-      "desc": "",
-      "price": "",
-      "stock": ""
-    },
-    {
-      "id": "9a44",
-      "name": "",
-      "desc": "",
-      "price": "",
-      "stock": ""
+      "id": "dfb1",
+      "Nome": "Xarope de Camomila",
+      "Descricao": "Te deixa... de boas",
+      "Preco": 4.5,
+      "Estoque": 17
     }
   ]
 }

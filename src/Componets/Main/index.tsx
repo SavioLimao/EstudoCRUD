@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { Buttons } from "../Buttons";
 import { api } from "../../API/api";
-import { PlusButton } from "../PlusButton";
 import { Modal } from "../Modal";
 
 export const Main = () => {
@@ -20,21 +19,11 @@ export const Main = () => {
     }
   };
 
-  // const AddProduct = () => {
-  //   const NewProduct = {
-  //     id: Produtos.length + 1,
-  //     Nome: "Novo",
-  //     Descricao: "Nova Descrição",
-  //     Preco: 0.0,
-  //     Estoque: 0,
-  //   };
-  // };
-
   
   return (
     <div className="MainDiv">
       <table>
-      <Modal>Adicioanr Novo Produto</Modal>
+      <Modal />
         <tr>
           <th>Produto</th>
           <th>Descrição</th>
