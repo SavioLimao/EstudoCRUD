@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { api } from "../../API/api";
 import "./Modal.css"
 
-export const Modal = () => {
+export const Modal = ({ props }) => {
   const [Nome, setName] = useState("");
   const [Descricao, setDesc] = useState("");
   const [Preco, setPrice] = useState("");
@@ -11,7 +11,10 @@ export const Modal = () => {
   const [modal, setmodal] = useState(false);
 
   const toggleModal = () => {
-    console.log('modal')
+    if (modal) {
+      const AlertX = confirm("Se você fechar perderá TUDO!")
+      if (!AlertX) return
+    }
     setmodal(!modal);
   };
   const salvarMed = async () => {
@@ -23,6 +26,7 @@ export const Modal = () => {
     }
     console.log(payload)
     await api.post("/produtos", payload)
+    props()
     toggleModal()
   }
   return (

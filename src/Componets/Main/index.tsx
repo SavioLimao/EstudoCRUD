@@ -23,7 +23,7 @@ export const Main = () => {
   return (
     <div className="MainDiv">
       <table>
-      <Modal />
+      <Modal props={getPosts}/>
         <tr>
           <th>Produto</th>
           <th>Descrição</th>

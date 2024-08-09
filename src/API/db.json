@@ -34,6 +34,20 @@
       "Descricao": "Te deixa... de boas",
       "Preco": 4.5,
       "Estoque": 17
+    },
+    {
+      "id": "5ca6",
+      "Nome": "Phoenix Down",
+      "Descricao": "Traz um aliado de volta a vida",
+      "Preco": 1000,
+      "Estoque": 2
+    },
+    {
+      "id": "1067",
+      "Nome": "Chinela Havaiana",
+      "Descricao": "Cura malcriação",
+      "Preco": 22.99,
+      "Estoque": 2
     }
   ]
 }
