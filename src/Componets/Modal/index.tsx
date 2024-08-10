@@ -11,11 +11,16 @@ export const Modal = ({ props }) => {
   const [modal, setmodal] = useState(false);
 
   const toggleModal = () => {
-    if (modal) {
+    if (!Nome=="" || !Descricao=="" || !Preco=="" ||  !Estoque=="")  {
       const AlertX = confirm("Se você fechar perderá TUDO!")
       if (!AlertX) return
     }
     setmodal(!modal);
+    setName("")
+    setDesc("")
+    setPrice("")
+    setStock("")
+
   };
   const salvarMed = async () => {
     const payload: product = {
