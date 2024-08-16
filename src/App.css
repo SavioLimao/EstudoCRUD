@@ -108,3 +108,15 @@ table {
     padding-top: 20px;
   
   }
+.AsideTheme > button {
+  background-color:#42053b
+}
+.AsideTheme {
+  display: flex;
+  align-content: end;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  flex-wrap: wrap;
+  outline: solid #42053b;
+}

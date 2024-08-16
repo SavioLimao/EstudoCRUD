@@ -29,7 +29,7 @@ export const Modal = ({ props }) => {
       Preco: parseFloat(Preco),
       Estoque: parseInt(Estoque)
     }
-    console.log(payload)
+    
     await api.post("/produtos", payload)
     props()
     toggleModal()

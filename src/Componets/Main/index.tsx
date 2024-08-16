@@ -31,11 +31,7 @@ export const Main = () => {
           <th>Estoque</th>
           <th>Edit | Del</th>
         </tr>
-        {/* <tr>
-          <th>
-            <Modal>Adicioanr Novo Produto</Modal>
-          </th>
-        </tr> */}
+
         <tbody>
           {Produtos.map((Produto, index) => (
             <tr key={index}>
