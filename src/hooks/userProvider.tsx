@@ -1,7 +1,9 @@
 import { createContext, useContext, useEffect, useState } from "react";
 import { api } from "../API/api";
 
-const ProductProvider = createContext({children} => {
+const ProductContext = createContext({})
+
+const ProductProvider = ({children}) => {
     const [product, setProduct] = useState([])
 
 
@@ -17,8 +19,29 @@ const getProduct = async () => {
     setProduct(productApi)
 }
 
-const addMed = async (payload: Product) => {
-    await new Promise
+const addMed = async (payload) => {
+    await api.post("produtos", payload)
+
+    getProduct()
 }
 
-})
+const ContextValue = {
+    product,
+    getProduct,
+    addMed,
+}
+
+return <ProductContext.Provider value={ContextValue}>{children}</ProductContext.Provider>
+}
+
+const productUser = () => {
+    const context = useContext(ProductContext)
+    
+    if (!context) {
+        throw new Error("useProduto must be used within a ProductProvider");
+      }
+    
+      return context;
+    }
+
+    export {productUser, ProductProvider}

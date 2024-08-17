@@ -48,6 +48,20 @@
       "Descricao": "Cura malcriação",
       "Preco": 22.99,
       "Estoque": 2
+    },
+    {
+      "id": "fbb1",
+      "Nome": "",
+      "Descricao": "",
+      "Preco": null,
+      "Estoque": null
+    },
+    {
+      "id": "5874",
+      "Nome": "",
+      "Descricao": "",
+      "Preco": null,
+      "Estoque": null
     }
   ]
 }

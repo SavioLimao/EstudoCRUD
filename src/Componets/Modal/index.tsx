@@ -23,14 +23,14 @@ export const Modal = ({ props }) => {
 
   };
   const salvarMed = async () => {
-    const payload: product = {
+    const payload = {
       Nome: Nome,
       Descricao: Descricao,
       Preco: parseFloat(Preco),
       Estoque: parseInt(Estoque)
     }
     
-    await api.post("/produtos", payload)
+    await api.post("produtos", payload)
     props()
     toggleModal()
   }
