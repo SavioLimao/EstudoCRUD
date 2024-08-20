@@ -34,7 +34,7 @@ const ContextValue = {
 return <ProductContext.Provider value={ContextValue}>{children}</ProductContext.Provider>
 }
 
-const productUser = () => {
+const ProductUser = () => {
     const context = useContext(ProductContext)
     
     if (!context) {
@@ -44,4 +44,4 @@ const productUser = () => {
       return context;
     }
 
-    export {productUser, ProductProvider}
+    export {ProductUser}

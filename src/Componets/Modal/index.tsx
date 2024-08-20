@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { api } from "../../API/api";
 import "./Modal.css"
+import { productUser } from "../../hooks/userProvider";
 
 export const Modal = ({ props }) => {
   const [Nome, setName] = useState("");

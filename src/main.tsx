@@ -5,6 +5,7 @@ import "./index.css";
 import { Main } from "./Componets/Main/index.tsx";
 import { About } from "./Routes/index.tsx";
 import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
+import { productUser } from "./hooks/userProvider.tsx";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,8 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     {/* <App /> */}
-    <RouterProvider router ={router} />
+    <productUser>
+      <RouterProvider router ={router} />
+    </productUser>
   </React.StrictMode>
 );
