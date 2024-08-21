@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Buttons } from "../Buttons";
-import { api } from "../../API/api";
+import { ApiUser } from "../../hooks/useAPI";
 import { Modal } from "../Modal";
 
 export const Main = () => {
@@ -9,15 +9,17 @@ export const Main = () => {
     getPosts()
   }, []);
 
-  const getPosts = async () => {
-    try {
-      const responseAxios = await api.get("/produtos");
-      const produtoApi = responseAxios.data;
-      setProdutos(produtoApi)
-    } catch (error) {
-      alert("deu pau");
-    }
-  };
+  // const getPosts = async () => {
+  //   try {
+  //     const responseAxios = await api.get("/produtos");
+  //     const produtoApi = responseAxios.data;
+  //     setProdutos(produtoApi)
+  //   } catch (error) {
+  //     alert("deu pau");
+  //   }
+  // };
+
+
 
   
   return (

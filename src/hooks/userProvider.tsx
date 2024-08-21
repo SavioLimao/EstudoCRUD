@@ -10,7 +10,7 @@ const ProductProvider = ({children}) => {
 useEffect(() => {
     console.log('loading API')
     getProduct()
-} [])
+}, [])
 
 const getProduct = async () => {
     const response = await api.get('produtos')
