@@ -7,31 +7,31 @@ const ProductProvider = ({children}) => {
     const [product, setProduct] = useState([])
 
 
-useEffect(() => {
-    console.log('loading API')
-    getProduct()
-}, [])
+    useEffect(() => {
+        console.log('loading API')
+        getProduct()
+    }, [])
 
-const getProduct = async () => {
-    const response = await api.get('produtos')
-    const productApi = response.data
+    const getProduct = async () => {
+        const response = await api.get('produtos')
+        const productApi = response.data
 
-    setProduct(productApi)
-}
+        setProduct(productApi)
+    }
 
-const addMed = async (payload) => {
-    await api.post("produtos", payload)
+    const addMed = async (payload) => {
+        await api.post("produtos", payload)
 
-    getProduct()
-}
+        getProduct()
+    }
 
-const ContextValue = {
-    product,
-    getProduct,
-    addMed,
-}
+    const ContextValue = {
+        product,
+        getProduct,
+        addMed,
+    }
 
-return <ProductContext.Provider value={ContextValue}>{children}</ProductContext.Provider>
+    return <ProductContext.Provider value={ContextValue}>{children}</ProductContext.Provider>
 }
 
 const ProductUser = () => {
@@ -41,7 +41,7 @@ const ProductUser = () => {
         throw new Error("useProduto must be used within a ProductProvider");
       }
     
-      return context;
-    }
+    return context;
+}
 
-    export {ProductUser}
+export {ProductUser}
