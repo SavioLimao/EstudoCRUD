@@ -2,10 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.tsx";
 import "./index.css";
-import { Main } from "./Componets/Main/index.tsx";
-import { About } from "./Routes/index.tsx";
-import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
-import { productUser } from "./hooks/userProvider.tsx";
+import { About } from "./pages/About/index.tsx";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { ProductProvider } from "./hooks/useProduct.tsx";
+import { Main } from "./pages/Main/index.tsx";
 
 const router = createBrowserRouter([
   {
@@ -26,8 +26,8 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     {/* <App /> */}
-    <productUser>
+    <ProductProvider>
       <RouterProvider router ={router} />
-    </productUser>
+    </ProductProvider>
   </React.StrictMode>
 );

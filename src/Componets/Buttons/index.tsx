@@ -15,7 +15,7 @@ export const Buttons = () => {
   };
 
   return (
-    <aside>
+    <div>
       {/* <div className="Plus">
         <BTN onClick={Plus}>+</BTN>
       </div> */}
@@ -27,6 +27,6 @@ export const Buttons = () => {
       <div className="Delete">
         <BTN onClick={Del}>-</BTN>
       </div>
-    </aside>
+    </div>
   );
 };

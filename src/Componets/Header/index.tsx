@@ -1,6 +1,7 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import { AsideButton, AsideTheme, StyledLink } from "./styles";
+import LinkNav from "../LinkNav";
 
-Link
 const Header = () => {
   return (
     <div className="HeaderDiv">
@@ -11,14 +12,14 @@ const Header = () => {
         />
         <div>
           <nav>
-            <Link to={"/"}>Home</Link>
-            <a href="#">Remídios</a>
-            <Link to={"/about"}>About</Link>
+            <LinkNav to="/">Home</LinkNav>
+            <a href="#">Remédios</a>
+            <StyledLink to={"/about"}>About</StyledLink>
           </nav>
         </div>
-          <aside className="AsideTheme">
-            <button></button>
-          </aside>
+          <AsideTheme>
+            <AsideButton onClick={() => alert("okok")}>Teste</AsideButton>
+          </AsideTheme>
       </header>
     </div>
   );

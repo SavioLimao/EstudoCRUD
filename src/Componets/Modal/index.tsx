@@ -2,14 +2,17 @@ import React, { useState } from "react";
 import { api } from "../../API/api";
 import "./Modal.css"
 import { productUser } from "../../hooks/userProvider";
+import { ApiUser, useProduct } from "../../hooks/useProduct";
 
-export const Modal = ({ props }) => {
+export const Modal = () => {
   const [Nome, setName] = useState("");
   const [Descricao, setDesc] = useState("");
   const [Preco, setPrice] = useState("");
   const [Estoque, setStock] = useState("");
 
   const [modal, setmodal] = useState(false);
+
+  const {getProducts} = useProduct();
 
   const toggleModal = () => {
     if (!Nome=="" || !Descricao=="" || !Preco=="" ||  !Estoque=="")  {
@@ -32,7 +35,7 @@ export const Modal = ({ props }) => {
     }
     
     await api.post("produtos", payload)
-    props()
+    getProducts()
     toggleModal()
   }
   return (
